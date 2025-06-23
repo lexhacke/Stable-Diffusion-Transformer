@@ -2,7 +2,6 @@
 Reimplementation of Stable Diffusion's DDIM with a Diffusion Transformer as per (Peebles & Xie, 2022) [[arXiv](https://arxiv.org/abs/2212.09748)]
 
 ## **Autoencoder**
----
 **Input**: 
     256×256 RGB images  
 - **Latents**:
