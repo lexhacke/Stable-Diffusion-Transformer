@@ -13,6 +13,6 @@ Reimplementation of Stable Diffusion's DDIM with a Diffusion Transformer as per 
 - **Training**:
     1) VGG Perceptual Loss as per Zhang et al., 2018 [[arXiv](https://arxiv.org/abs/1801.03924)]
     2) KL Divergence Loss as per Kingma et al., 2018 [[arXiv](https://arxiv.org/abs/1312.6114)]
-       ⚠️ Note: My encoder does not output a mean and log-var (μ, logσ²) pair as in a standard VAE. Instead, it deterministically outputs a singular latent vector.  
+       <br>⚠️ Note: My encoder does not output a mean and log-var (μ, logσ²) pair as in a standard VAE. Instead, it deterministically outputs a singular latent vector.  
           To encourage a Gaussian prior, I apply a quasi-KL divergence loss between the encoder output and a standard normal distribution. This acts as a regularizer, loosely encouraging the latent space to remain            centered and isotropic.
     3) PatchGAN Discriminator Loss as per Isola et al., 2018 [[arXiv](https://arxiv.org/pdf/1611.07004)]
